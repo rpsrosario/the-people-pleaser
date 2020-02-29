@@ -4,7 +4,7 @@
     "mvc": "1.0",
     "IsDnDProject": false,
     "configs": [
-        
+        "default"
     ],
     "option_ecma": false,
     "parentProject": {
@@ -42,8 +42,24 @@
             "Key": "0c055987-9ef6-4543-a626-3caec18f742b",
             "Value": {
                 "id": "c4ed736b-907c-4db2-a1bc-caf932806cf3",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\rm_init\\rm_init.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "0d215562-5cc6-443f-9936-66d16f378db1",
+            "Value": {
+                "id": "d6f31358-ba35-4e09-a79d-fd2d749efd12",
+                "resourcePath": "objects\\obj_game_title\\obj_game_title.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0da3fa82-0c99-4a20-bb09-f3eca3933784",
+            "Value": {
+                "id": "b1e5d629-80c2-4855-ac00-0c5a6ce759d8",
+                "resourcePath": "datafiles_yy\\Assets\\credits\\main_font.credits.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -55,6 +71,14 @@
             }
         },
         {
+            "Key": "19cc8a17-d377-4cd5-9d58-78df3a877613",
+            "Value": {
+                "id": "81a97649-f6f3-4844-85bb-c56134e3e2f3",
+                "resourcePath": "datafiles_yy\\Assets\\title_font.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "32936649-7d02-4972-ae61-5bd922f8dd10",
             "Value": {
                 "id": "db8e58ba-ec08-44be-ac2f-681d31a5922b",
@@ -63,10 +87,34 @@
             }
         },
         {
+            "Key": "34d77de4-4bbb-45dd-8f2a-55c467254cfe",
+            "Value": {
+                "id": "3cf0e543-16d4-458b-a35c-8707a47faa63",
+                "resourcePath": "datafiles_yy\\Assets\\main_font.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "3b713a9a-76de-4d46-8ec3-60f9a6894d16",
+            "Value": {
+                "id": "24ea1ded-09f8-4778-9373-280fe195d3a1",
+                "resourcePath": "views\\3b713a9a-76de-4d46-8ec3-60f9a6894d16.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4cbde42d-60cc-418b-a297-65d8d12400f8",
             "Value": {
                 "id": "c7a2f04f-1887-4506-a85c-0d0426d09d46",
                 "resourcePath": "views\\4cbde42d-60cc-418b-a297-65d8d12400f8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6083d847-ced6-41ca-931c-e23f4eeea4b7",
+            "Value": {
+                "id": "9a8cac58-8c0e-42a3-9d15-fbfce1c82789",
+                "resourcePath": "views\\6083d847-ced6-41ca-931c-e23f4eeea4b7.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -84,6 +132,14 @@
                 "id": "37c3e42a-f136-49d1-aa03-3e875d148002",
                 "resourcePath": "views\\7190a0f2-ec55-4887-b125-3883ca932d7a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "71f3ab9e-5663-4d32-bf4b-707f7ccaa52e",
+            "Value": {
+                "id": "75d16681-b12e-4f73-ab2c-2c83147898a3",
+                "resourcePath": "scripts\\assert\\assert.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -111,6 +167,14 @@
             }
         },
         {
+            "Key": "7b05dcdb-8b9b-48eb-a73e-b67b28f5113c",
+            "Value": {
+                "id": "56ccba0c-2396-4bce-8c71-7565ebebd777",
+                "resourcePath": "views\\7b05dcdb-8b9b-48eb-a73e-b67b28f5113c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7e1f57c8-1308-4a3e-ad0f-97ecac062232",
             "Value": {
                 "id": "8521cf86-5883-4ab3-9054-60d6bfb87c12",
@@ -124,6 +188,22 @@
                 "id": "69be2cbf-cfdc-4033-ba27-8310a226d434",
                 "resourcePath": "views\\8ce58cdd-9391-4566-8e2a-1eadb721b258.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9309e15d-d4e4-456d-a345-eb81fbc2028e",
+            "Value": {
+                "id": "b3aa445f-c91d-4852-8832-4e9c5d19687c",
+                "resourcePath": "views\\9309e15d-d4e4-456d-a345-eb81fbc2028e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "96e895c1-eb5d-4779-918f-b77a324de4e7",
+            "Value": {
+                "id": "8d8fae9b-2aac-4bbe-bb3a-cf37bac589b7",
+                "resourcePath": "datafiles_yy\\Assets\\licenses\\title_font.eula.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -159,6 +239,14 @@
             }
         },
         {
+            "Key": "af449c2c-3589-4108-91d6-4006a5be571b",
+            "Value": {
+                "id": "561532ef-f250-4b69-89fa-97ac89656df5",
+                "resourcePath": "datafiles_yy\\Assets\\credits\\title_font.credits.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "cb913e2f-3694-48fd-a62f-f7cf915564dc",
             "Value": {
                 "id": "94b8a559-b587-4d0e-b736-090d6dbee29a",
@@ -183,10 +271,42 @@
             }
         },
         {
+            "Key": "d2b69628-c7cf-47e3-b4b6-a181888984b7",
+            "Value": {
+                "id": "6f646a91-04f3-49e6-8a6f-173030cc11dd",
+                "resourcePath": "rooms\\rm_menu\\rm_menu.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "dc609a69-7043-49a0-8adb-893ea57b0cd3",
+            "Value": {
+                "id": "2c9a0ea8-129b-432c-bcc2-5d3a26da1d56",
+                "resourcePath": "scripts\\load_fonts\\load_fonts.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "df788d52-5f3b-494f-9cb1-6cdd366aa05c",
+            "Value": {
+                "id": "4baaa3e5-a676-4ec2-b5f9-880bf68c33f7",
+                "resourcePath": "datafiles_yy\\Assets\\licenses\\main_font.license.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "e8fee8b0-6505-4951-8e18-46e5cd5e977b",
             "Value": {
                 "id": "894be023-c25b-4a23-aacb-5c4e151ac666",
                 "resourcePath": "views\\e8fee8b0-6505-4951-8e18-46e5cd5e977b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f239a910-cc0d-44ab-ab59-0854504008e7",
+            "Value": {
+                "id": "2eb43d6b-5cd6-4623-91d6-651486c82535",
+                "resourcePath": "views\\f239a910-cc0d-44ab-ab59-0854504008e7.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -200,7 +320,8 @@
         }
     ],
     "script_order": [
-        
+        "dc609a69-7043-49a0-8adb-893ea57b0cd3",
+        "71f3ab9e-5663-4d32-bf4b-707f7ccaa52e"
     ],
     "tutorial": ""
 }
