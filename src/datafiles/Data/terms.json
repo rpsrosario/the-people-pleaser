@@ -1,0 +1,34 @@
+{
+  "action": {
+    "helping others": {
+      "intent:good-willed": 2,
+      "intent:malicious": -1
+    },
+    "hurting animals": {
+      "intent:good-willed": -1,
+      "intent:malicious": 1
+    },
+    "hiking": {
+      "activity-level:sportsy": 1,
+      "activity-level:couch-potato": -1
+    },
+    "reading a book": {
+      "activity-level:sportsy": -1,
+      "activity-level:couch-potato": 1
+    },
+    "climbing": {
+      "activity-level:sportsy": 2,
+      "activity-level:couch-potato": -2
+    }
+  },
+  "place": {
+    "homeless shelter": {
+      "intent:good-willed": 1,
+      "intent:malicious": -2
+    },
+    "gym": {
+      "activity-level:sportsy": 1,
+      "activity-level:couch-potato": -2
+    }
+  }
+}

@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0b965617-059b-48c5-adb2-df8d892f2496",
+            "Value": {
+                "id": "a32b350a-b46c-4fde-9635-fbb99f6a69f7",
+                "resourcePath": "datafiles_yy\\Data\\terms.json.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "0c055987-9ef6-4543-a626-3caec18f742b",
             "Value": {
                 "id": "c4ed736b-907c-4db2-a1bc-caf932806cf3",
@@ -79,6 +87,14 @@
             }
         },
         {
+            "Key": "102267d3-1cef-4e00-b2ce-27d480f4b476",
+            "Value": {
+                "id": "6a8fd8a3-a337-43df-942d-6c81c14bbb6a",
+                "resourcePath": "scripts\\initialize_term_database\\initialize_term_database.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "17713911-6b48-4309-a0cb-d7244a0269d1",
             "Value": {
                 "id": "8127d119-ff97-43ee-b826-88976d465a0c",
@@ -100,6 +116,14 @@
                 "id": "ae2b23f3-c79b-40b9-a3d2-faad60f73db0",
                 "resourcePath": "scripts\\keyboard_released\\keyboard_released.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2221e2b5-47b3-40e5-a2c4-1e85f7a38cb8",
+            "Value": {
+                "id": "a5afae93-d62a-47c6-b381-ada730a07954",
+                "resourcePath": "datafiles_yy\\Data\\tags.json.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -231,6 +255,14 @@
             }
         },
         {
+            "Key": "77dd84f1-e506-4262-90b6-9899939cb031",
+            "Value": {
+                "id": "310f9bb0-9078-456e-a435-12adac630d60",
+                "resourcePath": "scripts\\initialize_personality_tags\\initialize_personality_tags.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "78c2f6ad-cfc4-4ddd-9b33-0b4a271dd45f",
             "Value": {
                 "id": "9ad6cbc9-4e35-424b-9a5f-9f1d41a7d538",
@@ -247,10 +279,26 @@
             }
         },
         {
+            "Key": "7aaf5f44-faba-4db4-b6d1-e57f8b318f9e",
+            "Value": {
+                "id": "ba0549f3-a014-4214-b758-3c56617b9e88",
+                "resourcePath": "views\\7aaf5f44-faba-4db4-b6d1-e57f8b318f9e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7b05dcdb-8b9b-48eb-a73e-b67b28f5113c",
             "Value": {
                 "id": "56ccba0c-2396-4bce-8c71-7565ebebd777",
                 "resourcePath": "views\\7b05dcdb-8b9b-48eb-a73e-b67b28f5113c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7ce2eb5f-df6a-465e-a1b7-b92d95d4f97c",
+            "Value": {
+                "id": "1b6484ed-7e2f-49fa-92a5-2b5414cbee34",
+                "resourcePath": "views\\7ce2eb5f-df6a-465e-a1b7-b92d95d4f97c.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -319,6 +367,14 @@
             }
         },
         {
+            "Key": "9b528e51-3709-4af9-813f-2d3729b7b170",
+            "Value": {
+                "id": "de799a5a-8a7e-4a14-9b13-51630d892cea",
+                "resourcePath": "scripts\\initialize_character_names\\initialize_character_names.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9d01c4d2-2646-4422-bcbc-5faf23a3cd33",
             "Value": {
                 "id": "1b56dab8-2a59-4c9c-9915-e1acef316bf9",
@@ -379,6 +435,14 @@
             "Value": {
                 "id": "561532ef-f250-4b69-89fa-97ac89656df5",
                 "resourcePath": "datafiles_yy\\Assets\\credits\\title_font.credits.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "b5ed163f-afef-409e-8fff-a1a026c2119e",
+            "Value": {
+                "id": "c97cded0-4d94-4e70-8f41-8be64b839ac0",
+                "resourcePath": "datafiles_yy\\Data\\names.json.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -517,6 +581,9 @@
         "6c48e753-2f10-42fc-b4ce-69a549cce9cd",
         "6029d4a4-a7cb-4978-a79b-5721a3e61ef8",
         "4c6b30de-dad0-447c-b5b2-4f7c9c6d383f",
+        "9b528e51-3709-4af9-813f-2d3729b7b170",
+        "77dd84f1-e506-4262-90b6-9899939cb031",
+        "102267d3-1cef-4e00-b2ce-27d480f4b476",
         "dc609a69-7043-49a0-8adb-893ea57b0cd3",
         "93e426d8-1da2-47bd-a85e-9b28bd04b8d3",
         "cb398119-1d4d-4844-bfeb-703910635452",

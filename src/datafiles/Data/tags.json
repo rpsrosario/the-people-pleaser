@@ -1,0 +1,14 @@
+[
+  [
+    "intent:good-willed",
+    "intent:malicious"
+  ],
+  [
+    "activity-level:sportsy",
+    "activity-level:couch-potato"
+  ],
+  [
+    "self-view:confident",
+    "self-view:doubtful"
+  ]
+]
