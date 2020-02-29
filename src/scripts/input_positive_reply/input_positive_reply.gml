@@ -26,7 +26,7 @@ repeat (gamepad_count) {
   triggered |= gamepad_axis_value(gamepad, gp_axisrh) >= GAMEPAD_THRESHOLD;
   triggered |= gamepad_button_value(gamepad, gp_shoulderlb) >= GAMEPAD_THRESHOLD;
   triggered |= gamepad_button_value(gamepad, gp_shoulderrb) >= GAMEPAD_THRESHOLD;
-  triggered |= gamepad_released(gamepad, gp_padr, gp_stickr, gp_face1);
+  triggered |= gamepad_released(gamepad, gp_padr, gp_stickr, gp_face1, gp_shoulderr);
   if (triggered) {
     return true;
   }

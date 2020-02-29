@@ -6,3 +6,4 @@
 #macro GAMEPAD_THRESHOLD 0.85
 
 global.gamepads = ds_list_create();
+instance_create_layer(0, 0, "Instances", ctrl_gamepad);

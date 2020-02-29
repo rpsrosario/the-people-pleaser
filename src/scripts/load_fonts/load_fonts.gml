@@ -14,5 +14,5 @@ assert(
 );
 
 // TODO: Read settings from a file
-global.main_font  = font_add("Assets/main_font.ttf" , 16, false, false, 32, 128);
+global.main_font  = font_add("Assets/main_font.ttf" , 24, false, false, 32, 128);
 global.title_font = font_add("Assets/title_font.ttf", 48, false, false, 32, 128);
