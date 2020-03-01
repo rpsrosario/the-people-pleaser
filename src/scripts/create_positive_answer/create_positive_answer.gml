@@ -11,7 +11,7 @@
 
 var text   = argument0;
 var action = argument1;
-var answer = instance_create_layer(0, 0, layer, obj_answer);
+var answer = instance_create_layer(0, 0, "Instances", obj_answer);
 
 answer.halign = fa_right;
 answer.text   = text;
