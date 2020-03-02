@@ -1,0 +1,96 @@
+[
+  {
+    "categories": [
+      "action",
+      "action",
+      "place"
+    ],
+    "sequence": [
+      {
+        "text": [
+          "Hey there!\n",
+          "I heard there is someone ",
+          0,
+          ", I'm gonna go and check it out.\n",
+          "Wanna come?"
+        ],
+        "answers": {
+          "+": {
+            "text": [ "Sure, love it!" ],
+            "reaction": {
+              "+": [ "Cool, we leave in 10 minutes!" ],
+              "0": [ "Really? I don't really know what I feel about it." ],
+              "-": [ "How can you think that?!" ]
+            }
+          },
+          "-": {
+            "text": [ "No way! I hate it." ],
+            "reaction": {
+              "+": [ "Glad to see you feel the same!" ],
+              "0": [ "Really? I don't really know what I feel about it." ],
+              "-": [ "Pfff, you don't know what you're missing!" ]
+            }
+          }
+        }
+      },
+      {
+        "text": [
+          "Well afterwards I'm meeting a few others.\n",
+          "There's been talks about going out ",
+          1,
+          "."
+        ],
+        "answers": {
+          "+": {
+            "text": [ "Hope you have fun!" ],
+            "reaction": {
+              "+": [ "Thanks!" ],
+              "0": [ "That's the idea." ],
+              "-": [ "I'm being forced to go, so I doubt it." ]
+            }
+          },
+          "-": {
+            "text": [ "Good luck trying to have fun." ],
+            "reaction": {
+              "+": [ "I know what you're saying!" ],
+              "0": [ "If I don't at least I'm spending time with people." ],
+              "-": [ "I like it a lot, unlike your tone!" ]
+            }
+          }
+        }
+      },
+      {
+        "text": [
+          "Ohh, forgot to mention, we're gonna stop by ",
+          2,
+          " around 7 PM.\n",
+          "Since you're new here feel free to drop by."
+        ],
+        "answers": {
+          "+": {
+            "text": [ "7 PM it is!" ],
+            "reaction": {
+              "+": [ "Cool, it'll be nice to have a new face there!" ],
+              "0": [ "Don't be late." ],
+              "-": [ "How can you be so excited about that?" ]
+            }
+          },
+          "-": {
+            "text": [ "Over my dead body." ],
+            "reaction": {
+              "+": [ "Hahaha I would skip it too if I could!" ],
+              "0": [ "Didn't know you dislike it." ],
+              "-": [ "Ok... Exaggerated much?" ]
+            }
+          }
+        }
+      },
+      {
+        "text": [ "Well, see you around.\nBye!" ],
+        "answers": {
+          "0": [ "Bye!" ]
+        }
+      }
+    ]
+  }
+]

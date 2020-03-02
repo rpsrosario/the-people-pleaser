@@ -17,3 +17,19 @@ assert(json >= 0, "Failed to decode the terms database JSON payload");
 
 buffer_delete(buffer);
 global.terms_database = json;
+
+// Index terms for faster iteration / shuffling
+var category = ds_map_find_first(json);
+while (!is_undefined(category)) {
+  var terms = json[? category ];
+  var term  = ds_map_find_first(terms);
+  
+  var term_index = ds_list_create();
+  while (!is_undefined(term)) {
+    ds_list_add(term_index, term);
+    term = ds_map_find_next(terms, term);
+  }
+  ds_map_add_list(terms, ".index", term_index);
+  
+  category = ds_map_find_next(json, category);
+}
