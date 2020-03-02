@@ -25,3 +25,5 @@ for (var i = 0; i < PLAYTHROUGH_INTERACTION_COUNT; i++) {
   ds_list_add(interactions, the_room);
   lookup[? instance ] = interaction;
 }
+
+room_goto(interactions[| current]);

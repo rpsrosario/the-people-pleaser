@@ -5,7 +5,8 @@
     "name": "61d724a5-d023-4062-ad71-9d9150fd82b3",
     "children": [
         "96bb0fde-d79e-41dc-8f85-9023ff295880",
-        "76dae4b9-b8c3-4648-ba26-3c5342212b7b"
+        "76dae4b9-b8c3-4648-ba26-3c5342212b7b",
+        "f762bf4c-370b-41aa-a28c-e0dba448a01b"
     ],
     "filterType": "GMScript",
     "folderName": "Actions",
