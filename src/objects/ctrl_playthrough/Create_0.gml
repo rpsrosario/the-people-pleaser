@@ -23,7 +23,9 @@ for (var i = 0; i < PLAYTHROUGH_INTERACTION_COUNT; i++) {
   var instance    = room_instance_add(the_room, 0, 0, obj_interaction);
   
   ds_list_add(interactions, the_room);
-  lookup[? instance ] = interaction;
+  ds_map_add_list(lookup, instance, interaction);
 }
 
 room_goto(interactions[| current]);
+
+// TODO: Plug in specific character to interaction

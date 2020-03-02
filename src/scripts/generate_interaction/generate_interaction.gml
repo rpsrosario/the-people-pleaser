@@ -2,7 +2,7 @@
 /// @param index
 ///   Index of the interaction template.
 /// @returns
-///   A DS Map with the generated interaction.
+///   A DS list with the generated interaction steps.
 /// @description
 ///   Generates a concrete interaction from the interaction template.
 ///
@@ -16,7 +16,6 @@
 
 var index       = argument0;
 var template    = global.interactions[| index ];
-var interaction = ds_map_create();
 
 var categories = template[? "categories" ];
 var _categories = ds_list_create();
@@ -30,7 +29,6 @@ for (var c = 0; c < category_count; c++) {
   
   _categories[| c] = term_index[| 0];
 }
-ds_map_add_list(interaction, "terms", _categories); // They have been converted to the actual terms
 
 var sequence  = template[? "sequence" ];
 var _sequence = ds_list_create();
@@ -43,7 +41,7 @@ for (var s = 0; s < steps; s++) {
   ds_list_mark_as_map(_sequence, s);
   
   var text = step[? "text"]; // TODO: Logic could be incorporated into generate_text
-  _step[? "text" ] = generate_text(text, categories);
+  _step[? "text" ] = generate_text(text, _categories);
   
   var answers  = step[? "answers" ];
   var _answers = ds_map_create();
@@ -53,7 +51,7 @@ for (var s = 0; s < steps; s++) {
   if (ds_map_exists(answers, "0")) {
     // Only a neutral answer exists
     var neutral = answers[? "0" ];
-    _answers[? "0" ] = generate_text(neutral, categories);
+    _answers[? "0" ] = generate_text(neutral, _categories);
   } else {
     // Both positive and negative answers exist
     
@@ -64,7 +62,7 @@ for (var s = 0; s < steps; s++) {
       _answers[? "+" ] = _template;
       
       var text = template[? "text" ];
-      _template[? "text" ] = generate_text(text, categories);
+      _template[? "text" ] = generate_text(text, _categories);
       
       var reaction  = template[? "reaction" ];
       var _reaction = ds_map_create();
@@ -73,15 +71,15 @@ for (var s = 0; s < steps; s++) {
       
       {
         var text = reaction[? "+" ];
-        _reaction[? "+" ] = generate_text(text, categories);
+        _reaction[? "+" ] = generate_text(text, _categories);
       }
       {
         var text = reaction[? "0" ];
-        _reaction[? "0" ] = generate_text(text, categories);
+        _reaction[? "0" ] = generate_text(text, _categories);
       }
       {
         var text = reaction[? "-" ];
-        _reaction[? "-" ] = generate_text(text, categories);
+        _reaction[? "-" ] = generate_text(text, _categories);
       }
     }
     
@@ -92,7 +90,7 @@ for (var s = 0; s < steps; s++) {
       _answers[? "-" ] = _template;
       
       var text = template[? "text" ];
-      _template[? "text" ] = generate_text(text, categories);
+      _template[? "text" ] = generate_text(text, _categories);
       
       var reaction  = template[? "reaction" ];
       var _reaction = ds_map_create();
@@ -101,18 +99,19 @@ for (var s = 0; s < steps; s++) {
       
       {
         var text = reaction[? "+" ];
-        _reaction[? "+" ] = generate_text(text, categories);
+        _reaction[? "+" ] = generate_text(text, _categories);
       }
       {
         var text = reaction[? "0" ];
-        _reaction[? "0" ] = generate_text(text, categories);
+        _reaction[? "0" ] = generate_text(text, _categories);
       }
       {
         var text = reaction[? "-" ];
-        _reaction[? "-" ] = generate_text(text, categories);
+        _reaction[? "-" ] = generate_text(text, _categories);
       }
     }
   }
 }
 
-return interaction;
+ds_list_destroy(_categories);
+return _sequence;
