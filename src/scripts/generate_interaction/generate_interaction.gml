@@ -39,7 +39,6 @@ var steps     = ds_list_size(sequence);
 for (var s = 0; s < steps; s++) {
   var step  = sequence[| s];
   var _step = ds_map_create();
-  ds_map_copy(_step, step);
   _sequence[| s] = _step;
   ds_list_mark_as_map(_sequence, s);
   
@@ -51,8 +50,7 @@ for (var s = 0; s < steps; s++) {
   
   var answers  = step[? "answers" ];
   var _answers = ds_map_create();
-  ds_map_copy(_answers, answers);
-  _step[? "answers" ] = _answers;
+  ds_map_add_map(_step, "answers", _answers);
   
   if (ds_map_exists(answers, "0")) {
     // Only a neutral answer exists
@@ -64,16 +62,14 @@ for (var s = 0; s < steps; s++) {
     { // TODO: Could be heavily deduplicated
       var template  = answers[? "+" ];
       var _template = ds_map_create();
-      ds_map_copy(_template, template);
-      _answers[? "+" ] = _template;
+      ds_map_add_map(_answers, "+", _template);
       
       var text = template[? "text" ];
       _template[? "text" ] = generate_text(text, _categories);
       
       var reaction  = template[? "reaction" ];
       var _reaction = ds_map_create();
-      ds_map_copy(_reaction, reaction);
-      _template[? "reaction" ] = _reaction;
+      ds_map_add_map(_template, "reaction", _reaction);
       
       {
         var text = reaction[? "+" ];
@@ -92,16 +88,14 @@ for (var s = 0; s < steps; s++) {
     { // TODO: Could be heavily deduplicated
       var template  = answers[? "-" ];
       var _template = ds_map_create();
-      ds_map_copy(_template, template);
-      _answers[? "-" ] = _template;
+      ds_map_add_map(_answers, "-", _template);
       
       var text = template[? "text" ];
       _template[? "text" ] = generate_text(text, _categories);
       
       var reaction  = template[? "reaction" ];
       var _reaction = ds_map_create();
-      ds_map_copy(_reaction, reaction);
-      _template[? "reaction" ] = _reaction;
+      ds_map_add_map(_template, "reaction", _reaction);
       
       {
         var text = reaction[? "+" ];
