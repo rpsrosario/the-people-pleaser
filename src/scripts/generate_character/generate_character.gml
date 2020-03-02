@@ -21,4 +21,5 @@ for (var t = 0; t < PLAYTHROUGH_TAG_COUNT; t++) {
   ds_list_add(tags, group[| tag ]);
 }
 
+character[? "feeling" ] = 0; // Feeling towards the player
 return character;

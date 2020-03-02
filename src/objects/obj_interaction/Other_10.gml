@@ -18,12 +18,12 @@ if (++current < ds_list_size(steps)) {
     
     var positive = answers[? "+" ];
     instance_deactivate_object(
-      create_positive_answer(positive[? "text" ], action_next_step)
+      create_positive_answer(positive[? "text" ], action_do_positive_answer)
     );
     
     var negative = answers[? "-" ];
     instance_deactivate_object(
-      create_negative_answer(negative[? "text" ], action_next_step)
+      create_negative_answer(negative[? "text" ], action_do_negative_answer)
     );
   }
 } else {

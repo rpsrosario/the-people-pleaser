@@ -18,7 +18,12 @@ switch (state) {
 
 }
 
-if (state != AnswerState.ChoiceFadeIn) {
+var any_selected = false;
+with (obj_answer) {
+  any_selected |= state == AnswerState.ChoiceFadeIn;
+}
+
+if (!any_selected) {
   var trigger = false;
   trigger |= halign == fa_left && input_negative_reply();
   trigger |= halign == fa_right && input_positive_reply();

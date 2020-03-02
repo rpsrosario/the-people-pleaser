@@ -391,6 +391,14 @@
             }
         },
         {
+            "Key": "7f8a6d46-ae79-46e6-ac1f-fbbf9bfcbbd9",
+            "Value": {
+                "id": "f114c805-c517-4d00-83dd-7613cb96734c",
+                "resourcePath": "scripts\\action_do_positive_answer\\action_do_positive_answer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "89a1c3e6-ffec-4059-9173-020151dddd70",
             "Value": {
                 "id": "895ac653-1b6f-4a84-ab3e-1c2249f2059f",
@@ -492,6 +500,14 @@
                 "id": "b5afdffe-8673-43dc-b162-80016cd5362d",
                 "resourcePath": "views\\a07ac79e-0c9c-4037-892f-2a1dd36adf97.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a2b37ec1-bc9c-40d8-9ba9-e99aa834f25c",
+            "Value": {
+                "id": "9a92813f-bc3f-4bab-b703-6bc0aaf50b2a",
+                "resourcePath": "scripts\\generate_score\\generate_score.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -663,6 +679,14 @@
             }
         },
         {
+            "Key": "e0b942c7-a68d-4241-b1b4-c5fb452dc2e1",
+            "Value": {
+                "id": "957e305d-3543-4c46-a9fe-a6261ddde687",
+                "resourcePath": "scripts\\action_do_negative_answer\\action_do_negative_answer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e477021b-4217-42ff-8fe9-2ac02e4b8252",
             "Value": {
                 "id": "df6b7791-fa37-4c41-a3ea-f1b4e7e6d7cc",
@@ -724,6 +748,8 @@
         "76dae4b9-b8c3-4648-ba26-3c5342212b7b",
         "f762bf4c-370b-41aa-a28c-e0dba448a01b",
         "66e2de43-955c-4d73-b451-6520941ecae1",
+        "7f8a6d46-ae79-46e6-ac1f-fbbf9bfcbbd9",
+        "e0b942c7-a68d-4241-b1b4-c5fb452dc2e1",
         "6c48e753-2f10-42fc-b4ce-69a549cce9cd",
         "6029d4a4-a7cb-4978-a79b-5721a3e61ef8",
         "4c6b30de-dad0-447c-b5b2-4f7c9c6d383f",
@@ -747,6 +773,7 @@
         "baf7cd81-6856-4f4f-a75a-4beb2ff2fb67",
         "24054739-7693-4069-976a-11ecb1245e0f",
         "9eeba92c-ff09-43ed-910e-85596b736d94",
+        "a2b37ec1-bc9c-40d8-9ba9-e99aa834f25c",
         "29a17e68-60dc-4b97-aec1-4d3db5e5f30a",
         "71f3ab9e-5663-4d32-bf4b-707f7ccaa52e"
     ],

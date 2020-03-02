@@ -43,8 +43,11 @@ for (var s = 0; s < steps; s++) {
   _sequence[| s] = _step;
   ds_list_mark_as_map(_sequence, s);
   
-  var text = step[? "text"]; // TODO: Logic could be incorporated into generate_text
-  _step[? "text" ] = character[? "name" ] + ":\n\n" + generate_text(text, _categories);
+  var text = step[? "text"];
+  
+  _step[? "text"  ]     = character[? "name" ] + ":\n\n" + generate_text(text, _categories);
+  _step[? "score" ]     = generate_score(text, character, categories, _categories);
+  _step[? "character" ] = character;
   
   var answers  = step[? "answers" ];
   var _answers = ds_map_create();
