@@ -1,5 +1,6 @@
 /// Initialize the game state
 
+randomize();
 load_fonts();
 register_gamepad_support();
 initialize_character_names();

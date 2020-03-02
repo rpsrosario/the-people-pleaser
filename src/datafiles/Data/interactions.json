@@ -8,10 +8,10 @@
     "sequence": [
       {
         "text": [
-          "Hey there!\n",
+          "Hey there!\n\n",
           "I heard there is someone ",
           0,
-          ", I'm gonna go and check it out.\n",
+          ", I'm gonna go and check it out.\n\n",
           "Wanna come?"
         ],
         "answers": {
@@ -35,7 +35,7 @@
       },
       {
         "text": [
-          "Well afterwards I'm meeting a few others.\n",
+          "Well afterwards I'm meeting a few others.\n\n",
           "There's been talks about going out ",
           1,
           "."
@@ -63,7 +63,7 @@
         "text": [
           "Ohh, forgot to mention, we're gonna stop by the ",
           2,
-          " around 7 PM.\n",
+          " around 7 PM.\n\n",
           "Since you're new here feel free to drop by."
         ],
         "answers": {

@@ -1,6 +1,8 @@
 /// @function generate_interaction
 /// @param index
 ///   Index of the interaction template.
+/// @param character
+///   Character involved in the interaction
 /// @returns
 ///   A DS list with the generated interaction steps.
 /// @description
@@ -15,6 +17,7 @@
 // TODO: Double check allocations, there are probably memory leaks somewhere due to monkey patching code
 
 var index       = argument0;
+var character   = argument1;
 var template    = global.interactions[| index ];
 
 var categories = template[? "categories" ];
@@ -41,7 +44,7 @@ for (var s = 0; s < steps; s++) {
   ds_list_mark_as_map(_sequence, s);
   
   var text = step[? "text"]; // TODO: Logic could be incorporated into generate_text
-  _step[? "text" ] = generate_text(text, _categories);
+  _step[? "text" ] = character[? "name" ] + ":\n\n" + generate_text(text, _categories);
   
   var answers  = step[? "answers" ];
   var _answers = ds_map_create();
